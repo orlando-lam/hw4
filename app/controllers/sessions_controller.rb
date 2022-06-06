@@ -3,7 +3,9 @@ class SessionsController < ApplicationController
   end
 
   def create
-        
+    @user = User.find_by({ "email" => params["email"] })
+    redirect_to "sessions/new"
+
   end
 
   def destroy
