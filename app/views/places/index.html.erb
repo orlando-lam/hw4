@@ -1,6 +1,6 @@
 <% if @current_user %>
 
-<h3 class="display-4 mb-4">My Places</h3>
+<h1 class="display-4 mb-4">My Places</h1>
 
   <p>
     <a class="btn btn-primary btn-sm mt-2" href="/places/new">Add a New Place</a>
@@ -13,5 +13,5 @@
   </ul>
 
 <% else %>
-  Please log in to continue
+  Please <a href="/login">log in</a> or <a href="/users/new">sign up</a> to continue
 <% end %>
