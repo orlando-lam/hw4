@@ -1,12 +1,12 @@
-<h1 class="display-4 mb-4"><%= @place["name"] %></h1>
+<h1 class="display-5 mb-4"><%= @place["name"] %></h1>
 
 <% if @current_user %>
   
   <p>
-    <a class= "btn btn-primary btn-sm mt-2" href="/posts/new?place_id=<%= @place["id"] %>">New Post</a>
+    <a class= "btn btn-primary btn-md mt-2" href="/posts/new?place_id=<%= @place["id"] %>">New Post</a>
   </p>
 
-  <h2>My Posts</h2>
+  <h2 class="display-6 mb-4">My Posts</h2>
   <div class="row">
     <% for post in @posts %>
       <div class="col-md-3">
