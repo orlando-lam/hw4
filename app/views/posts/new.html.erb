@@ -18,7 +18,7 @@
     <%= form.file_field "uploaded_image", :accept => "image/jpeg, image/jpg, image/png, image/gif", :class => "form-control" %>
   </p>
   <p>
-    <%= form.submit %>
+    <%= form.submit "Submit", :class => "btn btn-success"%>
   </p>
   <%= form.hidden_field "place_id" %>
 <% end %>

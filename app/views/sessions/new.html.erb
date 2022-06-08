@@ -3,12 +3,14 @@
 <%= form_with :url => "/sessions" do |form| %>
   <p>
     <%= form.label "email" %>
-    <%= form.text_field "email" %>
+    <%= form.text_field "email", :class => "form-control" %>
+  </p>
+  <p>
     <%= form.label "password" %>
-    <%= form.password_field "password" %>
+    <%= form.password_field "password", :class => "form-control" %>
   </p>
 
   <p>
-    <%= form.submit "Login" %>
+    <%= form.submit "Login", :class => "btn btn-success" %>
   </p>
 <% end %>
